@@ -64,3 +64,6 @@ SELECT @@SERVERNAME
 USE QuizDB;
 GO
 SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Participants';
+
+EXEC sp_rename 'Question', 'Questions';
+GO
